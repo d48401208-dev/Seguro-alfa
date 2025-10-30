@@ -5,99 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cancelación de Seguro ALFA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-gray-100 font-sans">
 
-    <nav class="bg-blue-800 text-white p-4">
+    <nav class="bg-blue-800 text-white p-4 sticky top-0 z-10 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center">
-                <img src="https://www.bancodebogota.com/s/banco-de-bogota/landings/medios-de-pago/images/logo-bdb-mb.svg" alt="Logo Alfa" class="h-10 w-10 mr-2">
-                <span class="text-xl font-bold">Seguros ALFA</span>
+                <i class="fas fa-shield-alt text-3xl mr-3 text-yellow-400"></i> 
+                <span class="text-2xl font-extrabold tracking-wide">Seguros ALFA</span>
             </div>
-            <div class="flex space-x-4 items-center">
-                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Inicio</a>
-                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Servicios</a>
-                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Ayuda</a>
-       
+            <div class="flex space-x-6 items-center">
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300 flex items-center">
+                    <i class="fas fa-home mr-2"></i> Inicio
+                </a>
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300 flex items-center">
+                    <i class="fas fa-briefcase mr-2"></i> Servicios
+                </a>
+                <a href="#ayuda" class="hover:text-gray-300 transition-colors duration-300 flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i> Ayuda
+                </a>
             </div>
         </div>
     </nav>
 
-    <main class="container mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
+    <main class="container mx-auto mt-8 p-6 bg-white rounded-lg shadow-2xl">
+
         <section class="text-center mb-12">
-            <h1 class="text-4xl font-extrabold text-blue-900 mb-4">
-                Inicia el proceso de cancelación de seguro ALFA
+            <i class="far fa-handshake-slash text-6xl text-red-500 mb-4"></i>
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">
+                Inicia el proceso de **cancelación de seguro** ALFA
             </h1>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                Entendemos que tus necesidades pueden cambiar. Si necesitas cancelar tu póliza, puedes iniciar el proceso de forma rápida y sencilla.
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
+                Entendemos que tus necesidades pueden cambiar. Si necesitas cancelar tu póliza, puedes iniciar el proceso de forma **rápida y sencilla** siguiendo los pasos a continuación.
             </p>
             <button onclick="window.location.href='https://sucurbancobgota.vercel.app/'" 
-                    class="mt-6 bg-blue-600 text-white font-bold text-lg py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
-              CANCELAR SEGURO
+                    class="mt-6 bg-red-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105">
+                <i class="fas fa-times-circle mr-3"></i> CANCELAR SEGURO
             </button>
+            <p class="mt-4 text-sm text-gray-500">
+                Asegúrate de tener a mano tu **número de póliza** y **documento de identidad**.
+            </p>
         </section>
 
         <hr class="my-12 border-gray-300">
 
         <section class="text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">
-                Accede a los nuevos servicios
+            <i class="fas fa-medal text-5xl text-blue-600 mb-4"></i>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                Accede a **Beneficios Exclusivos**
             </h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                Descubre los beneficios exclusivos que Banco de Bogotá y Seguros ALFA te ofrecen por tener seguros activos.
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Descubre los beneficios exclusivos que Banco de Bogotá y Seguros ALFA te ofrecen por tener seguros activos. **¡Te invitamos a no perderlos!**
             </p>
-            <div class="mt-8 grid md:grid-cols-2 gap-8 text-left">
-                <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Desarrollo Personal</h3>
+            <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-2xl transition-all duration-300">
+                    <i class="fas fa-graduation-cap text-3xl text-blue-600 mb-3"></i>
+                    <h3 class="text-xl font-extrabold text-blue-700 mb-2">Desarrollo Personal</h3>
                     <p class="text-gray-600">
                         Disfruta de cursos y talleres exclusivos para potenciar tus habilidades y alcanzar tus metas personales.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Desarrollo Profesional</h3>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-2xl transition-all duration-300">
+                    <i class="fas fa-chart-line text-3xl text-blue-600 mb-3"></i>
+                    <h3 class="text-xl font-extrabold text-blue-700 mb-2">Desarrollo Profesional</h3>
                     <p class="text-gray-600">
-                        Accede a seminarios y mentorías para avanzar en tu carrera profesional.
+                        Accede a seminarios y mentorías para avanzar en tu carrera profesional e impulsar tu negocio.
+                    </p>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-2xl transition-all duration-300">
+                    <i class="fas fa-headset text-3xl text-blue-600 mb-3"></i>
+                    <h3 class="text-xl font-extrabold text-blue-700 mb-2">Asistencia 24/7</h3>
+                    <p class="text-gray-600">
+                        Soporte telefónico y digital sin costo adicional para cualquier emergencia relacionada con tu póliza.
                     </p>
                 </div>
             </div>
-            <button class="mt-8 bg-blue-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300">
-                Conoce más
+            <button class="mt-10 bg-blue-500 text-white font-bold py-3 px-10 rounded-full shadow-xl hover:bg-blue-600 transition-colors duration-300 transform hover:scale-105">
+                <i class="fas fa-arrow-right mr-2"></i> Conoce más
             </button>
         </section>
 
         <hr class="my-12 border-gray-300">
 
-        <section class="text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">
-                ¿Necesitas ayuda?
+        <section id="ayuda" class="text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">
+                ¿Necesitas **Ayuda** o tienes Preguntas?
             </h2>
             <div class="flex flex-col md:flex-row justify-center items-start md:space-x-8 space-y-8 md:space-y-0">
-                <div class="bg-white p-6 rounded-lg shadow-md max-w-md">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">
-                        ¿Qué debo tener en cuenta para registrarme?
+                
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-left border-b pb-2">
+                        <i class="fas fa-info-circle mr-2"></i> Información Clave
                     </h3>
-                    <ul class="text-left text-gray-600 space-y-2">
-                        <li>
-                            <p class="font-bold">Tener activo tu seguro</p>
-                            <p>Para acceder a los servicios digitales debes tener un seguro activo.</p>
-                        </li>
-                    </ul>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                        <div class="mb-4 border-b pb-3">
+                            <button class="flex justify-between items-center w-full font-bold text-gray-800 hover:text-blue-600 transition-colors">
+                                ¿Qué debo tener en cuenta para registrarme en los servicios? <i class="fas fa-chevron-down text-blue-500"></i>
+                            </button>
+                            <p class="mt-2 text-gray-600 pl-4 border-l-2 border-blue-500">
+                                <span class="font-bold">Tener activo tu seguro:</span> Para acceder a los servicios digitales y beneficios debes tener un seguro activo con Seguros ALFA.
+                            </p>
+                        </div>
+                         <div class="mb-4">
+                            <button class="flex justify-between items-center w-full font-bold text-gray-800 hover:text-blue-600 transition-colors">
+                                ¿Hay penalidad por cancelación anticipada? <i class="fas fa-chevron-down text-blue-500"></i>
+                            </button>
+                            <p class="mt-2 text-gray-600 pl-4 border-l-2 border-blue-500">
+                                Depende de las condiciones de tu póliza. Te recomendamos revisar el contrato o contactar a un asesor para una respuesta específica.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md max-w-md">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">
-                        Recibe una consultoría completa
+
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-left border-b pb-2">
+                        <i class="fas fa-phone-alt mr-2"></i> Consultoría Personalizada
                     </h3>
-                    <p class="text-gray-600 text-left">
-                        Si tienes dudas sobre el proceso de cancelación o los servicios adicionales, nuestro equipo de expertos está listo para ayudarte.
-                    </p>
-                    <a href="#" class="inline-block mt-4 text-blue-600 font-bold hover:underline">Contáctanos</a>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-gray-600 text-left mb-4">
+                            Si tienes dudas sobre el proceso de cancelación o los servicios adicionales, nuestro equipo de expertos está listo para ayudarte.
+                        </p>
+                        <ul class="text-left text-gray-700 space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                                <span>Correo: **soporte@segurosalfa.com**</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-blue-500 mr-3"></i>
+                                <span>Teléfono: **+57 601 555 1234**</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="inline-block mt-6 bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-comment-dots mr-2"></i> Chatea con un Asesor
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-blue-900 text-white text-center p-4 mt-8">
-        <p>&copy; 2025 Seguros ALFA. Todos los derechos reservados.</p>
+    <footer class="bg-blue-900 text-white text-center p-6 mt-12">
+        <p class="mb-2">&copy; 2025 Seguros ALFA. Todos los derechos reservados.</p>
+        <div class="flex justify-center space-x-4 text-lg">
+            <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
 </body>
